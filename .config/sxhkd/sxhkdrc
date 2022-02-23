@@ -14,13 +14,6 @@ super + shift + b
 super + shift + n
 	$TERMINAL -e newsboat
 
-# volume
-XF86AudioMute
-	pamixer -t;
-
-XF86Audio{Raise,Lower}Volume
-	[ $(pamixer --get-mute) = false ] && pamixer {-i,-d} 1
-
 # password manager
 super + shift + p
 	$PASSWORD_MANAGER
