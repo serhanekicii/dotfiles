@@ -6,10 +6,6 @@ super + shift + m
 super + shift + b
 	brave
 
-# read from browser screen
-super + shift + e
-	externalpipe_buffer dmenu_type
-
 # rss
 super + shift + n
 	$TERMINAL -e newsboat
