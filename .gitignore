@@ -1,0 +1,10 @@
+.local/services/*/supervise/
+.local/services/*/log/*
+!.local/services/*/log/run
+.local/bin/nvr
+.config/ncmpcpp/error.log
+.config/nvim/autoload/
+.config/nvim/plugged/
+.config/zsh/plugins/
+.config/zsh/.zcompdump
+.config/newsboat/urls

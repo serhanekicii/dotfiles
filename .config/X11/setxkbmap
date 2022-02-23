@@ -1,0 +1,4 @@
+Rules    =  "evdev"
+Model    =  "pc105"
+Layout   =  "tr,us,de,ru"
+Options  =  "caps:swapescape"

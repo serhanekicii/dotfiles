@@ -1,0 +1,3 @@
+Host *
+    IdentityFile /home/serhan/.config/ssh/id_ed25519
+    UserKnownHostsFile /home/serhan/.config/ssh/known_hosts

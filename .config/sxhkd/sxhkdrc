@@ -1,0 +1,45 @@
+# mail
+super + shift + m
+	$TERMINAL -e neomutt
+
+# browser
+super + shift + b
+	brave
+
+# read from browser screen
+super + shift + e
+	externalpipe_buffer dmenu_type
+
+# rss
+super + shift + n
+	$TERMINAL -e newsboat
+
+# volume
+XF86AudioMute
+	pamixer -t;
+
+XF86Audio{Raise,Lower}Volume
+	[ $(pamixer --get-mute) = false ] && pamixer {-i,-d} 1
+
+# password manager
+super + shift + p
+	passmenu --type
+
+# lock
+super + ctrl + a
+	slock
+
+# screenshot
+Print
+	scrot
+
+# xkill
+super + x
+	xkill
+
+# dwm
+super + p
+	dmenu_run
+
+super + shift + Return
+	st
