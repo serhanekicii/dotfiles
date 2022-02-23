@@ -1,5 +1,8 @@
 [user]
 	email = me@serhanekici.com
 	name = Serhan Ekici
+	signingkey = 0ADFBB6CDBD51108
 [core]
 	sshCommand = ssh -F $SSH_CONFIG -i $SSH_ID -o UserKnownHostsFile=$SSH_KNOWN_HOSTS
+[commit]
+	gpgsign = true
