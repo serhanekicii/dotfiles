@@ -1,12 +1,16 @@
-# mail
+# terminal emulator
+super + shift + Return
+	$TERMINAL
+
+# mail reader
 super + shift + m
 	$TERMINAL -e neomutt
 
 # browser
 super + shift + b
-	brave
+	$BROWSER
 
-# rss
+# rss reader
 super + shift + n
 	$TERMINAL -e newsboat
 
@@ -19,13 +23,13 @@ XF86Audio{Raise,Lower}Volume
 
 # password manager
 super + shift + p
-	passmenu --type
+	$PASSWORD_MANAGER
 
-# lock
+# locker
 super + ctrl + a
-	slock
+	$LOCKER
 
-# screenshot
+# take screenshot
 Print
 	scrot
 
@@ -33,9 +37,6 @@ Print
 super + x
 	xkill
 
-# dwm
+# window spawner
 super + p
 	dmenu_run
-
-super + shift + Return
-	st
