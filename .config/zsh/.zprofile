@@ -47,6 +47,9 @@ export SSH_KNOWN_HOSTS="$XDG_CONFIG_HOME/ssh/known_hosts"
 export ELECTRUMDIR="$XDG_DATA_HOME/electrum"
 export MBSYNCRC="$XDG_CONFIG_HOME/isync/mbsyncrc"
 export _JAVA_OPTIONS="-Djava.util.prefs.userRoot=$XDG_CONFIG_HOME/java"
+export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/config"
+export NPM_CONFIG_CACHE="$XDG_CACHE_HOME/npm"
+export NPM_CONFIG_TMP="$XDG_RUNTIME_DIR/npm"
 
 # Start X server
 
