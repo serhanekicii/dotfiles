@@ -17,7 +17,7 @@ export EDITOR="nvim"
 export TERMINAL="st"
 export READER="zathura"
 export BROWSER="brave"
-export PASSWORD_MANAGER="passmenu --type"
+export PASSWORD_MANAGER="passmenu"
 export LOCKER="slock"
 
 export SUDO_EDITOR="nvim"
