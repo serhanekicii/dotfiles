@@ -7,7 +7,7 @@ export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CACHE_HOME="$HOME/.cache"
 export SOURCE_HOME="$HOME/.local/src"
 export BINARY_HOME="$HOME/.local/bin"
-export PATH="$PATH:$BINARY_HOME:$BINARY_HOME/statusbar:$SOURCE_HOME/esp/xtensa-lx106-elf/bin"
+export PATH="$PATH:$BINARY_HOME"
 export SVDIR="$HOME/.local/services"
 
 # Preferences
