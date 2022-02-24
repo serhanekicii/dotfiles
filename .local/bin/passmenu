@@ -2,12 +2,6 @@
 
 shopt -s nullglob globstar
 
-typeit=0
-if [[ $1 == "--type" ]]; then
-	typeit=1
-	shift
-fi
-
 if [[ -n $DISPLAY ]]; then
 	xdotool="xdotool type --clearmodifiers --file -"
 else
@@ -28,17 +22,13 @@ xkbusrconf=$XDG_CONFIG_HOME/X11/setxkbmap
 
 [[ -n $password ]] || exit
 
-if [[ $typeit -eq 0 ]]; then
-	pass show -c "$password" 2>/dev/null
-else
-	crntmap=$(xkb-switch)
+crntmap=$(xkb-switch)
 
-	pass=$(pass show "$password" | { IFS= read -r pass; printf %s "$pass"; } )
+pass=$(pass show "$password" | { IFS= read -r pass; printf %s "$pass"; } )
 
-	setxkbmap us
+setxkbmap us
 
-	echo "$pass" | $xdotool
+echo "$pass" | $xdotool
 
-	setxkbmap -config $xkbusrconf
-	xkb-switch -s $crntmap
-fi
+setxkbmap -config $xkbusrconf
+xkb-switch -s $crntmap
