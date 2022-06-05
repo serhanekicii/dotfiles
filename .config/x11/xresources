@@ -1,4 +1,3 @@
-
 Xft.autohint: 0
 Xft.antialias: 1
 Xft.hinting: true
@@ -7,11 +6,11 @@ Xft.dpi: 96
 Xft.rgba: rgb
 Xft.lcdfilter: lcddefault
 
-/* ST */
-st.font:Fira Code:style=Regular:size=12:antialias=true:autohint=true
-st.cwscale: 0.90
-st.chscale: 1.05
-st.alpha: 0.96
+st.font:Iosevka:style=Regular:size=13:antialias=true:autohint=true
+dmenu.font:Iosevka:style=Regular:size=11:antialias=true:autohint=true
+tabbed.font:Iosevka:style=Regular:size=13:antialias=true:autohint=true
+*.cwscale: 1
+*.chscale: 1
 
 #define nord0 #2E3440
 #define nord1 #3B4252
@@ -29,6 +28,33 @@ st.alpha: 0.96
 #define nord13 #EBCB8B
 #define nord14 #A3BE8C
 #define nord15 #B48EAD
+#define nord16 #deadd4
+
+
+*.background: nord0
+
+dwm.normbgcolor: nord0
+dwm.normbordercolor: nord0
+dwm.selbordercolor: nord0
+
+dwm.tagsnormbgcolor: nord0
+dwm.titlenormbgcolor: nord0
+
+dwm.normTTBbgcolor: nord0
+dwm.actTTBbgcolor: nord0
+
+*.foreground: nord6
+dwm.tagsnormfgcolor: nord6
+dwm.tagsselfgcolor: nord6
+
+dwm.titleselbgcolor: nord10
+dwm.tagsselbgcolor: nord10
+dmenu.selbackground: nord10
+dwm.selTTBbgcolor: nord10
+
+dwm.actfloatbgcolor: nord15
+dwm.normfloatbgcolor: nord15
+dwm.selfloatbgcolor: nord16
 
 *.color0: nord1
 *.color1: nord11

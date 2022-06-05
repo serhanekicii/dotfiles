@@ -14,11 +14,11 @@ password_files=( "$prefix"/**/*.gpg )
 password_files=( "${password_files[@]#"$prefix"/}" )
 password_files=( "${password_files[@]%.gpg}" )
 
-dmenu="dmenu"
+dmenu="dmenu -W 1860 -X 30 -Y 10 -h 28"
 
 password=$(printf '%s\n' "${password_files[@]}" | $dmenu)
 
-xkbusrconf=$XDG_CONFIG_HOME/X11/setxkbmap
+xkbusrconf=$XDG_CONFIG_HOME/x11/setxkbmap
 
 [[ -n $password ]] || exit
 
