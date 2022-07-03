@@ -110,3 +110,9 @@ let g:rainbow_active = 1
 let g:airline#extensions#tagbar#enabled = 1
 
 nmap <F8> :TagbarToggle<CR>
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
