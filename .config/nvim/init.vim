@@ -22,6 +22,8 @@ Plug 'preservim/tagbar'
 Plug 'preservim/nerdcommenter'
 Plug 'arcticicestudio/nord-vim'
 Plug 'baskerville/vim-sxhkdrc'
+Plug 'strboul/urlview.vim'
+Plug 'vim-syntastic/syntastic'
 call plug#end()
 
 set go+=a
