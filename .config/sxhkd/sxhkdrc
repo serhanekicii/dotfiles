@@ -38,3 +38,6 @@ super + p
 
 super + shift + x
 	slock
+
+super + u
+	dmenuunicode
