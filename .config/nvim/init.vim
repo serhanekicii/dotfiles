@@ -111,6 +111,8 @@ let g:airline#extensions#tagbar#enabled = 1
 
 nmap <F8> :TagbarToggle<CR>
 
+nnoremap <silent> <C-B> :Urlview<CR>
+
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
