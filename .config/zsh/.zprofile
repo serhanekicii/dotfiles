@@ -4,7 +4,7 @@
 
 export LOCATION="Edirne"
 export EDITOR="nvim"
-export TERMINAL="st"
+export TERMINAL="tabbedst"
 export READER="zathura"
 export BROWSER="brave"
 export PASSWORD_MANAGER="passmenu"
