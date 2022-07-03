@@ -1,15 +1,5 @@
 #!/bin/zsh
 
-# Adjusting path
-
-export XDG_CONFIG_HOME="$HOME/.config"
-export XDG_DATA_HOME="$HOME/.local/share"
-export XDG_CACHE_HOME="$HOME/.cache"
-export SOURCE_HOME="$HOME/.local/src"
-export BINARY_HOME="$HOME/.local/bin"
-export PATH="$PATH:$BINARY_HOME"
-export SVDIR="$HOME/.local/services"
-
 # Preferences
 
 export LOCATION="Edirne"
@@ -19,17 +9,17 @@ export READER="zathura"
 export BROWSER="brave"
 export PASSWORD_MANAGER="passmenu"
 export LOCKER="slock"
-
 export SUDO_EDITOR="nvim"
-
-# History Configuration
-export HISTFILE="${XDG_DATA_HOME:-$HOME/.local/share}/history"
-export SAVEHIST=1000000              # Number of history entries to save to disk
-export HISTSIZE=1000000              # How many lines of history to keep in memory
 export DMENU_PARAMS='-W 1860 -X 30 -Y 10 -h 28'
 
 # ~/ Clean-up:
 
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CACHE_HOME="$HOME/.cache"
+export SOURCE_HOME="$HOME/.local/src"
+export BINARY_HOME="$HOME/.local/bin"
+export SVDIR="$HOME/.local/services"
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority" # This line will break some DMs.
 export XINITRC="$XDG_CONFIG_HOME/x11/xinitrc"
@@ -52,6 +42,16 @@ export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/config"
 export NPM_CONFIG_CACHE="$XDG_CACHE_HOME/npm"
 export NPM_CONFIG_TMP="$XDG_RUNTIME_DIR/npm"
 export WINEPREFIX="${XDG_DATA_HOME:-$HOME/.local/share}/wineprefixes/default"
+
+# Adjust path
+
+export PATH="$PATH:$BINARY_HOME:$BINARY_HOME/statusbar"
+
+# History Configuration
+
+export HISTFILE="${XDG_DATA_HOME:-$HOME/.local/share}/history"
+export SAVEHIST=1000000              # Number of history entries to save to disk
+export HISTSIZE=1000000              # How many lines of history to keep in memory
 
 # Start X server
 
