@@ -6,9 +6,9 @@ Xft.dpi: 96
 Xft.rgba: rgb
 Xft.lcdfilter: lcddefault
 
-st.font:Iosevka:style=Regular:size=13:antialias=true:autohint=true
-dmenu.font:Iosevka:style=Regular:size=11:antialias=true:autohint=true
-tabbed.font:Iosevka:style=Regular:size=13:antialias=true:autohint=true
+st.font: Iosevka:style=Regular:size=13:antialias=true:autohint=true
+dmenu.font: Iosevka:style=Regular:size=11:antialias=true:autohint=true
+tabbed.font: Iosevka:style=Regular:size=13:antialias=true:autohint=true
 *.cwscale: 1
 *.chscale: 1
 
