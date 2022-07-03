@@ -35,3 +35,6 @@ super + x
 # window spawner
 super + p
 	echo $DMENU_PARAMS | xargs dmenu_run
+
+super + shift + x
+	slock
