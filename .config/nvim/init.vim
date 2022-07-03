@@ -71,7 +71,12 @@ autocmd BufWritePre * %s/\s\+$//e
 
 autocmd BufWritePost *sxhkdrc !pkill -USR1 sxhkd
 
-autocmd BufWritePost *Xresources,*Xdefaults !reload_colors %
+autocmd BufWritePost *xresources !xrdb -merge %
+
+autocmd BufWritePost */webpage/*/*.md,*/webpage/*/*.html,*/webpage/*/conf ! sed -i "s/^date_updated=.*/date_updated=$(date +"\"\%a, \%d \%b \%Y \%H:\%M:\%S \%z\"")/" %:p:h/conf
+
+" Recompile dwmblocks on config edit.
+autocmd BufWritePost ~/.local/src/dwmblocks/config.h !cd ~/.local/src/dwmblocks/; sudo make install && { killall -q dwmblocks;setsid -f dwmblocks }
 
 inoremap <c-k> <up>
 inoremap <c-j> <down>
