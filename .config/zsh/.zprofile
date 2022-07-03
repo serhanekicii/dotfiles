@@ -42,10 +42,12 @@ export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/config"
 export NPM_CONFIG_CACHE="$XDG_CACHE_HOME/npm"
 export NPM_CONFIG_TMP="$XDG_RUNTIME_DIR/npm"
 export WINEPREFIX="${XDG_DATA_HOME:-$HOME/.local/share}/wineprefixes/default"
+export GOPATH="$XDG_DATA_HOME"/go
+export GOBIN="$GOPATH/bin"
 
 # Adjust path
 
-export PATH="$PATH:$BINARY_HOME:$BINARY_HOME/statusbar"
+export PATH="$PATH:$BINARY_HOME:$BINARY_HOME/statusbar:$GOBIN"
 
 # History Configuration
 
