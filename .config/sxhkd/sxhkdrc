@@ -16,7 +16,7 @@ super + shift + n
 
 # password manager
 super + shift + p
-	$PASSWORD_MANAGER
+	echo $DMENU_PARAMS | xargs $PASSWORD_MANAGER
 
 # locker
 super + ctrl + a
@@ -32,4 +32,4 @@ super + x
 
 # window spawner
 super + p
-	dmenu_run
+	echo $DMENU_PARAMS | xargs dmenu_run

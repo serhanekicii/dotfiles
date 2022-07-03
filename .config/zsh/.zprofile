@@ -26,6 +26,7 @@ export SUDO_EDITOR="nvim"
 export HISTFILE="${XDG_DATA_HOME:-$HOME/.local/share}/history"
 export SAVEHIST=1000000              # Number of history entries to save to disk
 export HISTSIZE=1000000              # How many lines of history to keep in memory
+export DMENU_PARAMS='-W 1860 -X 30 -Y 10 -h 28'
 
 # ~/ Clean-up:
 
