@@ -2,7 +2,7 @@
 
 xrandr --dpi 120							# Set DPI. User may want to use a larger number for larger screens.
 xset r rate 300 50 &
-xset s on && xset s 60 && xss-lock slock &
+xset s on && xset s 100 && xss-lock slock &
 #[ -x /usr/bin/gpg-agent ] && eval "$(/usr/bin/gpg-agent --daemon)" &
 xwallpaper --stretch $XDG_DATA_HOME/wallpapers/nord_mountains.jpg &	# set the background with the `setbg` script
 
