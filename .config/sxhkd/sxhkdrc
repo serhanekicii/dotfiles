@@ -24,7 +24,9 @@ super + ctrl + a
 
 # take screenshot
 Print
-	scrot
+	maim pic-full-$(date '+%y%m%d-%H%M-%S').png
+super + Print
+	maimpick
 
 # xkill
 super + x
